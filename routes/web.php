@@ -18,4 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', function() {
+    return view('front');
+});
+
 Route::get('/quizzes', [QuizController::class, 'index']); 
+
+Route::get('/elementary', function() {
+    return view('elementary_front');
+});
+
+Route::get('/intermediate', function() {
+    return view('intermediate_front');
+});
+
+Route::get('/trivia', function() {
+    return view('trivia_front');
+});
