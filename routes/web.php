@@ -35,3 +35,13 @@ Route::get('/intermediate', function() {
 Route::get('/trivia', function() {
     return view('trivia_front');
 });
+
+Route::get('/quiz1', [QuizController::class, 'index']);
+
+Route::get('/quiz2', function() {
+    return view('intermediate_quiz');
+});
+
+Route::get('/quiz3', function() {
+    return view('trivia_quiz');
+});

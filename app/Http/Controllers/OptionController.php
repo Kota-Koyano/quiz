@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Quiz;
+use App\Models\Option;
 
-class QuizController extends Controller
+class OptionController extends Controller
 {
     public function index(Quiz $quiz)
     {

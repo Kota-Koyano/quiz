@@ -15,14 +15,6 @@ class QuizSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('quizzes')->insert([
-            'question' => '你好',
-            'genre' => 1,
-            ]);
-            
-        DB::table('quizzes')->insert([
-            'question' => '我',
-            'genre' => 1,
-            ]);
+       
     }
 }
