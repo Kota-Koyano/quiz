@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>初級編</title>
+        <title>中級編</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
@@ -11,7 +11,9 @@
             @csrf
             @foreach ($quizzes as $quiz)
                 <div>
-                    <h1 class='question'>{{ $quiz->question }}</h1>
+                    <h1 class='question'>
+                        {{ $quiz->question }}
+                    </h1>
                     @foreach($quiz->options as $option)
                         <p>
                             <input type="radio" name="{{ $quiz->id }}"/>
