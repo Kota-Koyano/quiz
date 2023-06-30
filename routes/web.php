@@ -36,12 +36,8 @@ Route::get('/trivia', function() {
     return view('trivia_front');
 });
 
-Route::get('/quiz1', [QuizController::class, 'index']);
+Route::get('/quiz1', [QuizController::class, 'quiz1']);
 
-Route::get('/quiz2', function() {
-    return view('intermediate_quiz');
-});
+Route::get('/quiz2', [QuizController::class, 'quiz2']);
 
-Route::get('/quiz3', function() {
-    return view('trivia_quiz');
-});
+Route::get('/quiz3', [QuizController::class, 'quiz3']);
